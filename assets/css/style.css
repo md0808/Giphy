@@ -1,0 +1,48 @@
+body {
+    background-image: url(https://media.freebibleimages.org/stories/FB_Noah_Ark/overview-images/010-noah-ark.jpg?1538658066);
+    width: 100%;
+
+}
+
+.container {
+    
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(216, 199, 179, 0.69);
+    border-radius: 20px;
+}
+
+/* #shield {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding: 15px;
+    
+
+} */
+.row {
+    padding-bottom: 12px;
+    text-align: center;
+}
+#form {
+    font-size: 18px;
+    line-height: 24px
+
+}
+button {
+    padding: 10px, 10px, 10px, 10px;
+    border-radius: 5px;
+    background-color: #3f4140;
+    color: white;
+    margin: 10px, auto;
+}
+
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+
