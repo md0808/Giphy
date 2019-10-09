@@ -20,7 +20,6 @@ function createAnimalButtons(animalArray, classToAdd, areaToAddTo){
      var queryURLBase = 'http://api.giphy.com/v1/gifs/search';
      var apiKey = '5oyW4OXPzHKQclCSd2xmOslEccyBLO08';
      var queryURL = queryURLBase + '?q=' + animalType + '&api_key=' + apiKey + '&limit= 10';
-     console.log(animalType);
      $.ajax({
         url: queryURL,
         method: "GET"
@@ -46,7 +45,6 @@ function createAnimalButtons(animalArray, classToAdd, areaToAddTo){
 })
 
 $(document).on('click', '.searchImage', function (){
-    console.log($(this).attr('data-state'));
     var state = $(this).attr('data-state');
     if (state == 'still'){
         $(this).attr('src', $(this).data('animated'));
@@ -67,7 +65,4 @@ $('#add-search-button').on('click', function(){
     createAnimalButtons(animalArray, 'animal-button', '#button-div');
     }
     event.preventDefault();
-
-    // return false;
-
 })
