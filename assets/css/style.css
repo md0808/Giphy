@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://media.freebibleimages.org/stories/FB_Noah_Ark/overview-images/010-noah-ark.jpg?1538658066);
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/01/High-quality-Tileable-Wood-Texture.jpg");
     width: 100%;
 
 }
@@ -13,16 +13,10 @@ body {
     padding-right: 100px;
     background-color: rgba(216, 199, 179, 0.69);
     border-radius: 20px;
+    min-height: 600px;
 }
 
-/* #shield {
-    text-align: center;
-    margin-top: 100px;
-    padding-top: 100px;
-    padding: 15px;
-    
 
-} */
 .row {
     padding-bottom: 12px;
     text-align: center;
@@ -32,17 +26,44 @@ body {
     line-height: 24px
 
 }
-button {
-    padding: 10px, 10px, 10px, 10px;
+
+.animal-button {
+    padding: 30px, 30px, 30px, 30px;
     border-radius: 5px;
-    background-color: #3f4140;
+    background-color: #525252;
     color: white;
-    margin: 10px, auto;
+    margin: 10px, 10px, auto;
 }
 
+.animal-button:hover {
+    background-color: #1f1f1f;
+
+}
+
+.search-item{
+    padding-bottom: 30px;
+}
 
 h1{
     font-family: 'Luckiest Guy', cursive;
 }
 
+#add-search-button {
+    background-color: rgb(129, 189, 154);
+    border-radius: 5px
+}
+
+#add-search-button:hover {
+    background-color: rgb(61, 201, 119);
+
+}
+#search-input{
+    border-radius: 5px
+
+}
+
+
+ @media screen and (max-width: 800px) {
+
+}
 

@@ -33,7 +33,7 @@ function createGifButtons (animalArray){
     i = animal;
     console.log(animal);
     var animalButtons = $("<button class ='animal-button' data-animal ='" +animalArray[i]+ "' id='button-'" + animalArray[i] + "'>")
-    animalBu
+    
     $("#button-div").append(animalButtons);
     }
 } 
