@@ -4,6 +4,7 @@ $(function(){
 
 var animalArray = ['jaguar', 'sloth', 'seal', 'panda', 'koala', 'bat'];
 
+
 function createAnimalButtons(animalArray, classToAdd, areaToAddTo){
     $(areaToAddTo).empty();
     for (var i=0; i< animalArray.length; i++){
@@ -43,6 +44,17 @@ function createAnimalButtons(animalArray, classToAdd, areaToAddTo){
 
         })
 })
+
+$(document).on('dblclick', '.animal-button', function(){
+    $(this).remove();
+    var animalType = $(this).data('type');
+    var index = animalArray.indexOf(animalType);
+    console.log (animalType);
+    console.log (index);
+    animalArray.splice(index, 1)
+   
+})
+
 
 $(document).on('click', '.searchImage', function (){
     var state = $(this).attr('data-state');
