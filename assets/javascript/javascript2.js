@@ -70,7 +70,7 @@ $(document).on('click', '.searchImage', function (){
 
 $('#add-search-button').on('click', function(){
     var newSearch = $('input').eq(0).val();
-
+    $('#search-input').val(" ");
     if (animalArray.indexOf(newSearch) === -1
     && newSearch.match(/[a-z]/i) ) {
     animalArray.push(newSearch);
