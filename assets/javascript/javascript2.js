@@ -18,7 +18,7 @@ function createAnimalButtons(animalArray, classToAdd, areaToAddTo){
  $(document).on('click', '.animal-button', function(){
      $('#gif-display').empty();
      var animalType = $(this).data('type');
-     var queryURLBase = 'http://api.giphy.com/v1/gifs/search';
+     var queryURLBase = 'https://api.giphy.com/v1/gifs/search';
      var apiKey = '5oyW4OXPzHKQclCSd2xmOslEccyBLO08';
      var queryURL = queryURLBase + '?q=' + animalType + '&api_key=' + apiKey + '&limit= 10';
      $.ajax({
